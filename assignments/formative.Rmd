@@ -1,0 +1,65 @@
+---
+title: 'Assignment #1 (formative)'
+author: "Dr Thomas Robinson and Dr Dan de Kadt"
+date: "AT 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Submission information
+
+This assignment is due **Thursday 12 October 2023 at 4pm**:
+
+* Please submit this assignment via the submission portal on Moodle
+* You must submit your assignment as a *knitted, .html* file -- .Rmd, .pdfs, or other file types will not be accepted
+
+*Please note, we will not contact you to recompile documents if they are submitted in the wrong format. It is your responsibility to ensure you submit your work correctly. Failure to do so will result in a mark of 0 for that assignment.*
+
+## Introduction
+
+This is a *formative* assignment, which will not count towards your final grade. Instead, you should use this assignment as an opportunity to practice completing a problem set with the style and formatting that we expect in MY472. The exercises below will guide you through this process. You will receive feedback on how well your assignment meets these guidelines.
+
+For clarity, the formatting requirements for each assignment are as follows:
+
+* You must present all results in full sentences, as you would in a report or academic piece of writing
+  
+  * If the exercise requires generating a table or figure, you should include at least one sentence introducing and explaining it. E.g. "The table below reports the counts of Wikipedia articles mentioning the LSE, by type of article."
+
+* Unless stated otherwise, all code used to answer the exercises should be included as a code appendix at the end of the script. This formatting can be achieved by following the guidance in the template.Rmd file (see Exercise 1).
+
+* All code should be annotated with comments, to help the marker understand what you have done
+
+* Your output should be replicable. Any result/table/figure that cannot be traced back to your code will not be marked
+
+## Exercise 1
+
+A template .Rmarkdown file can be found in this repository [here](https://github.com/lse-my472/472_assignment_template). 
+
+Take a *fork* of the entire repository to use throughout the course. Set your forked version as public (if it is not public by default), and report the URL of your repository. The marker will check whether you have successfully forked the repository. For example:
+
+"My forked version of the assignment template repository can be found at www.github.com/tsrobinson/472_assignment_template"
+
+## Exercise 2
+
+R includes several built-in datasets, that can be found by calling `data()`. You can load a specific dataset into memory by calling `data("name_of_dataset")`.
+
+First, pick any of the built-in datasets and load it into R.
+
+Report whether your chosen dataset is "tidy" and explain why. You should evidence your claim by presenting the output of the `head()` function. This function shows the first few rows of the target object.
+
+If you believe your data is tidy, use R to create an untidy version in either wide or long format. If you believe your data is untidy, convert your data to a tidy format. Again, evidence your work by including the output from `head()` on your converted data frame. Finally, discuss briefly, in words, what you did and why your data is now tidy/untidy compared to the original dataset.
+
+## Exercise 3
+
+Choose a different built-in dataset within R and load it into memory.
+
+Your task is to transform this data frame and demonstrate the use of at least the following three components:
+
+* A piping operator: either `%>%` or `|>`
+* A call to the `group_by()` and `summarise()` functions
+* A transformation of a numeric variable *after* having called `summarise()`
+
+For this question you should report the code you use here (rather than only in the code appendix) by using `echo=TRUE` in this code chunk's options. Each step should be annotated with a code comment that succinctly explains what you are doing. Evidence your work by including the output from `head()` on your transformed data. Finally, discuss some aspect of the transformed data that is informative *and* that would not have been evident from the original format of the data.
