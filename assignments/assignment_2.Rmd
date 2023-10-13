@@ -86,7 +86,7 @@ Consider the following three string transformations (a-c) that when applied to s
 
 a. "apple" -> "pple" | "abacus" -> "bacus" | "Annapolis" -> "nnapolis"
 b. "apple" -> "pple" | "abacus" -> "bcus" | "Annapolis" -> "Annpolis"
-c. "C1_nat_a" -> "C_a" | "C2_state_g" -> "C_b" | "C9_Loc_5_i" -> "C9_i"
+c. "C1_nat_a" -> "C_a" | "D2_state_g" -> "D_g" | "E_Loc_5_i" -> "E_i"
 
 For each set of examples (a-c), write one function that would achieve these transformations **using regular expressions**. The input should be a string (character vector), and the function should return the transformed string (e.g. `my_fun("apple") -> "pple"`). Make your solution as general as possible, such that it would be robust to new cases that follow the same patterns as those given here.
 
