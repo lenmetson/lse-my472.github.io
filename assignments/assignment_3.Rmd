@@ -50,7 +50,7 @@ Include in the main text of your `.html` submission the code that created the da
 ### a. Gathering structured data
 Write an automatic webscraping function in R that constructs a table (as e.g. a data frame, a tibble, or a data table) of all R1 (Very High Research Activity) **and** R2 (High Research Activity) Research Universities in the United States of America. These data can be found on [wikipedia](https://en.wikipedia.org/wiki/List_of_research_universities_in_the_United_States). 
 
-Your initial scraper should collect five variables: 
+Your initial scraper should collect four variables: 
 
 i. The university's name
 ii. It's status (public or private) 
